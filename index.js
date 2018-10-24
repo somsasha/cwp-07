@@ -4,6 +4,7 @@ const fs = require('fs');
 const articles = require('./articles/handlers/articles_handler');
 const comments = require('./comments/handlers/comments_handler');
 const logs_handler = require('./logs_handler');
+const public = require('./public/handlers/public_handlers')
 const json_tryparse = require('./helpers/jsonparse_helper');
 let logs = require("./logs.json");
 
@@ -19,7 +20,13 @@ const handlers = {
   '/api/articles/delete': articles.delet,
   '/api/comments/create': comments.create,
   '/api/comments/delete': comments.delet,
-  '/api/logs':logs_handler
+  '/api/logs':logs_handler,
+  '/': public.indexHtml,
+  '/index.html': public.indexHtml,
+  '/form.html': public.formHtml,
+  '/app.js': public.appJs,
+  '/form.js': public.formJs,
+  '/site.css': public.site
 };
 
 const server = http.createServer((req, res) => {
