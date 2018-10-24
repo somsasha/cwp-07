@@ -5,16 +5,17 @@
     <title></title>
     <script src="./index.js"></script>
     <script src='http://code.jquery.com/jquery-3.2.1.min.js'></script>
-
+    <script type='text/javascript'>
+        $(function (){
+            getArticles();
+        });
+        $('#next-button').on('click', function(){
+            alert( "Всем - привет!" );
+            //getArticlesNext();
+        });
+    </script>
 </head>
 <body>
-<script type='text/javascript'>
-    $(function (){
-        getArticles();
-    });
-</script>
-
 <br />
 </body>
-
 </html>
