@@ -21,12 +21,12 @@ const handlers = {
   '/api/comments/create': comments.create,
   '/api/comments/delete': comments.delet,
   '/api/logs':logs_handler,
-  '/': public.indexHtml,
-  '/index.html': public.indexHtml,
-  '/form.html': public.formHtml,
-  '/app.js': public.appJs,
-  '/form.js': public.formJs,
-  '/site.css': public.site
+  '/': public.index_html,
+  '/index.html': public.index_html,
+  '/form.html': public.form_html,
+  '/index.js': public.index_js,
+  '/form.js': public.form_js,
+  '/site.css': public.site_css
 };
 
 const server = http.createServer((req, res) => {

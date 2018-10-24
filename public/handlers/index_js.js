@@ -9,7 +9,7 @@ function index_js(req, res, payload, cb) {
 }
 
 function read_index_js(callback) {
-    fs.readFile("./public/app.js", "utf8", function (err, data) {
+    fs.readFile("./public/index.js", "utf8", function (err, data) {
         if (err) {
             console.log("ReadFile error");
         }

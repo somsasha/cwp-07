@@ -1,7 +1,7 @@
 const h_index_html = require('./index_html');
 const h_form_html = require('./form_html');
 const h_index_js = require('./index_js');
-const form_js = require('./form_js');
+const h_form_js = require('./form_js');
 const h_site_css = require('./site_css');
 
 
